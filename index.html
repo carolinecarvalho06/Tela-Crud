@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>GRUD Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="busca">
+      <input type="text" id="buscarInput" placeholder="Buscar por login...">
+      <button onclick="buscar()">Buscar</button>
+    </div>
+
+    <div class="botoes">
+      <button onclick="adicionar()">Cadastrar</button>
+      <button onclick="atualizar()">Atualizar</button>
+      <button onclick="apagarItemVetor()">Apagar</button>
+    </div>
+
+    <div class="formulario">
+      <label for="id">id:</label>
+      <input type="text" id="id">
+      <label for="login">login:</label>
+      <input type="text" id="login">
+
+      <label for="senha">senha:</label>
+      <input type="password" id="senha">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>login</th>
+          <th>senha</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaCorpo">
+        <!-- Preenchido via JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="bd.js"></script>
+</body>
+</html>
